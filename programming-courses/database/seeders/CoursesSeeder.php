@@ -7,8 +7,8 @@ use Illuminate\Database\Seeder;
 
 class CoursesSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
+    /**  
+     * R    un the database seeds.
      */
     public function run(): void
     {
