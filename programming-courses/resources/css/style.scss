@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    .container {
+        max-width: 1440px;
+        width: 100%;
+        margin: 0 auto;
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            div {
+                nav {
+                    ul {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        li {
+                            a {
+                                margin-left: 15px;
+                                font-size: 18px;
+                                font-weight: 500;
+                                transition: 0.5s;
+
+                                &:hover {
+                                    font-size: 18.6px;
+                                    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.448);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
