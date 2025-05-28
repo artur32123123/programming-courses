@@ -12,7 +12,7 @@
     <x-menu />
 
     <main class="container">
-        <section loading="lazy" class="About-us animation-block ">
+        {{-- <section loading="lazy" class="About-us animation-block ">
             <h1>Получи профессию мечты</h1>
             <p>С нами вы сможете получить профессию мечты и начать свою
                 карьеру в любой области прграммирования</p>
@@ -34,6 +34,15 @@
                 </div>
 
             </div>
+        </section> --}}
+        <section class="main-block">
+            <div class="main-block__info">
+
+                <h1>Стань разработчиком с нуля за 12 месяцев</h1>
+                <h2>Онлайн-курсы с менторской поддержкой, реальными проектами и гибким графиком. Начните карьеру в IT
+                    без
+                    опыта.</h2>
+                <a href="">Получить бесплатный урок</a>
             </div>
         </section>
     </main>
