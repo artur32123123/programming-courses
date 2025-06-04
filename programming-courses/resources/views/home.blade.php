@@ -45,6 +45,7 @@
                 <a href="">Получить бесплатный урок</a>
             </div>
         </section>
+        
     </main>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </body>

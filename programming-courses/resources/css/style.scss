@@ -41,7 +41,6 @@ body {
         backdrop-filter: blur(10px);
         position: sticky;
         top: 0;
-
         border: 1px solid rgba(43, 43, 43, 0.568);
         padding-top: 20px;
 
@@ -123,9 +122,11 @@ body {
                     background-repeat: no-repeat;
                     background-size: cover;
                     padding: 20px;
+
                     &:hover {
                         box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.259);
                     }
+
                     h2 {
                         font-size: 33px;
                         font-weight: 600;
@@ -161,31 +162,35 @@ body {
             .main-block__info {
                 display: contents;
 
-            h1 {
-                font-size: 28px;
-                text-align: center;
-            }
-            h2 {
-                font-size: 20px;
-                margin-top: 10px;
-            }
-            a {
-                text-align: center;
-                margin-top: 10px;
-                transition: 0.5s;
-                background-size: 200% auto;
-                color: white;
-                padding: 12px;
-                box-shadow: 0 0 20px #eee;
-                border-radius: 10px;
-                background-image: linear-gradient(to right, #003CC5 0%, #0B63F6 51%, #003CC5 100%);
-                &:hover {
-                    background-position: right center;
-
+                h1 {
+                    font-size: 30px;
+                    text-align: center;
                 }
 
+                h2 {
+                    font-size: 23px;
+                    margin-top: 10px;
+                }
+
+                a {
+                    text-align: center;
+                    margin-top: 10px;
+                    transition: 0.5s;
+                    background-size: 200% auto;
+                    color: white;
+                    padding: 12px;
+                    box-shadow: 0 0 20px #eee;
+                    border-radius: 10px;
+                    background-image: linear-gradient(to right, #003CC5 0%, #0B63F6 51%, #003CC5 100%);
+
+                    &:hover {
+                        background-position: right center;
+                    }
+                }
             }
         }
+   
+
+        }
     }
-    }
-}
+
