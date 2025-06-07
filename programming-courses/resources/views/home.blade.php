@@ -35,7 +35,7 @@
 
             </div>
         </section> --}}
-        <section class="main-block">
+        {{-- <section class="main-block">
             <div class="main-block__info">
 
                 <h1>Стань разработчиком с нуля за 12 месяцев</h1>
@@ -44,8 +44,8 @@
                     опыта.</h2>
                 <a href="">Получить бесплатный урок</a>
             </div>
-        </section>
-        
+        </section> --}}
+
     </main>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </body>
