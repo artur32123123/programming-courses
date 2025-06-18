@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet"  href="style.css?v=1.1">
+  <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(102451524, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/102451524" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+  <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="shortcut icon" href="https://static.tildacdn.com/img/tildafavicon.ico" type="image/x-icon">
+  <title>LETIKI. KIDS CLUB</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <header class="flexbox-center container">
+    <nav class="navbar">
+      <div class="navbar__wrap">
+        <div class="hamb">
+          <div class="hamb__field" id="hamb">
+            <span class="bar"></span> <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+        <a href="#" class="logo" id="logo">
+          <img class="burger__line" src="./img/logo.png" alt="">
+        </a>
+        <ul class="menu" id="menu">
+          <li>
+            <a class="" href="">Главная</a>
+          </li>
+          <li>
+            <a class="" href="#part1">Почему мы</a>
+          </li>
+          <li>
+            <a class="" href="#part2">Дневной клуб</a>
+          </li>
+          <li>
+            <a class="" href="#part3">Тематики программ</a>
+          </li>
+          <li>
+            <a class="" href="#part4">Отзывы</a>
+          </li>
+          <li>
+            <a class="" href="#part5">Контакты</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </nav>
+    <div class="popup" id="popup"></div>
+
+
+  </header>
+  <main>
+    <section class="container beidj flexbox-center">
+      <div class="beidj-text">
+        <img src="./img/Бейджи ЕГЭ ОГЭ.svg" alt="">
+        <h2>Летний клуб английского языка для детей</h2>
+        <span>от 6 до 13 лет </span>
+        <div class="my-block__c flexbox">
+          <div class="my-block__c1 flexbox">
+            <div class="circle">
+              3
+            </div>
+            <div class="my-block__inf">
+              <h3>ПОТОКА</h3>
+            </div>
+          </div>
+          <div class="my-block__c2 flexbox">
+            <div class="circle">
+              20</div>
+            <div class="my-block__inf">
+              <h3>Дней</h3>
+              <p>в месяц</p>
+            </div>
+          </div>
+          <div class="asds my-block__c3 flexbox">
+            <div class="circle">60</div>
+            <div class="my-block__inf">
+              <h3>Эффективных</h3>
+              <p>уроков в поток</p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <h1>Создайте заявку прямо сейчас</h1>
+          <p>Наша команда профессионалов готова помочь вам реализовать ваши идеи. Оставьте заявку, и мы свяжемся с вами
+            в течение 15 минут.</p>
+
+          <button id="openModalBtn" class="btn">Оставить заявку</button>
+
+
+        </div>
+
+        <div id="modal" class="modal">
+          <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Оставить заявку</h2>
+            <form id="applicationForm" action="https://formspree.io/f/mwpblyyo" method="POST">
+              <div class="form-group">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="Имя" required>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Ваш номер телефона:</label>
+                <input type="tel" id="phone" name="Номер телефона" required>
+              </div>
+
+              <button type="submit" class="submit-btn">Отправить данные</button>
+            </form>
+            <div id="status"></div>
+          </div>
+        </div>
+        <!-- <form action="https://formspree.io/f/mwpblyyo" method="POST">
+          <label>
+            Ваше имя:
+            <input type="text" name="Имя">
+          </label>
+          <label>
+            Ваш номер телефона:
+            <input type="tel" name="Номер телефона">
+          </label>
+          <button type="submit">Отправить данные</button>
+        </form> -->
+        <!-- <button style="margin: 50px 0;"  id="openFormBtn">Оставить заявку</button> -->
+      </div>
+    </section>
+    <section class="potoks">
+      <div class="testsss container flexbox">
+        <div class="potok ">
+          <h3 class="potok_title"> В каждом потоке:</h3>
+          <div class="flexbox" style="flex-wrap: wrap; justify-content: space-around;">
+            <div class="potok-card">
+              <img src="./img/icons8-галочка.svg" alt="">
+              <h4>Комплексная, авторская программа обучения</h4>
+            </div>
+            <div class="potok-card">
+              <img src="./img/icons8-галочка.svg" alt="">
+              <h4>Развитие навыков будущего </h4>
+            </div>
+            <div class="potok-card adaptiv">
+              <img src="./img/icons8-галочка.svg" alt="">
+              <h4>Интеллектуальные квесты, прогулки, ярмарка</h4>
+            </div>
+
+          </div>
+        </div>
+        <div class="watsapp flexbox">
+          <a href="tel:+405533">
+            <img src="./img/icons8-whatsapp.svg" alt="">
+            40-55-33
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="part1" class="ar">
+      <div class="ar-cards container flexbox">
+        <div class="ar-card">
+          <img src="./img/1ca.webp" alt="">
+          <h3>КАЖДАЯ СМЕНА НОВАЯ ТЕМАТИКА</h3>
+        </div>
+        <div class="ar-card">
+          <img src="./img/2ca.webp" alt="">
+          <h3>
+            Интеллектуальные игры и квесты</h3>
+        </div>
+        <div class="ar-card">
+          <img src="./img/3ca.webp" alt="">
+          <h3>Защита проектной работы</h3>
+        </div>
+        <div class="ar-card">
+          <img src="./img/4ca.webp" alt="">
+          <h3>
+            Ярмарка</h3>
+        </div>
+      </div>
+    </section>
+    <section id="part3" class="my-content">
+      <div class="fomrm">
+        <h2>Интенсивный курс английского языка <br> в формате Edutainment - обучение+развлечение. <br> У нас 3
+          тематических потока</h2>
+        <div class="histar">
+          <div class="items">
+            <a href="">
+              Познай себя. Супергерои</a>
+          </div>
+          <div class="items">
+            <a href="">
+              Мастер общения
+            </a>
+          </div>
+          <div class="items">
+            <a href="">
+              Поколение будущего</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="part2" class="smena">
+      <div class="smena-card container">
+        <h2>Смены летнего клуба</h2>
+        <p>смены по 20 дней <br> <span class="sn">c 9:00 - 11:00</span></p>
+        <div class="smena-info">
+          <div class="smena-infao-card">2 июня - 26 июня</div>
+          <div class="smena-infao-card">30 июня - 25 июля</div>
+          <div class="smena-infao-card">28 июля - 25 августа</div>
+          <div class="smena-infao-card dn">9:00 - 11:20 <br> 11:30-13:50</div>
+          <div class="smena-infao-card dn">9:00 - 11:20 <br> 11:30-13:50</div>
+          <div class="smena-infao-card dn">9:00 - 11:20 <br> 11:30-13:50</div>
+        </div>
+      </div>
+      <div class="cards container flexbox">
+        <div class="cards-left">
+          <ul>
+            <li>
+              <img src="./svg_1.svg" alt="">Для детей от 6 до
+              13 лет
+            </li>
+            <li>
+              <img src="./svg_2.svg" alt="">Летний клуб в
+              центре города
+            </li>
+            <li>
+              <img src="./svg_3.svg" alt="">
+              Прогулки и
+              проектные работы
+            </li>
+            <li>
+              <img src="./svg_4.svg" alt="">
+              Перекус
+            </li>
+            <li>
+              <img src="./svg_5.svg" alt="">
+              Ярмарка
+            </li>
+          </ul>
+        </div>
+        <div class="cards-right"></div>
+      </div>
+      <div class="price container">
+        <h2 class="my-price">Стоимость до 25 июня <span>18100</span> 13100</h2>
+      </div>
+      <div class="container jt">
+ <div class="container-42">
+        <a href="https://wa.me/89298642745" class="open-btn-42" id="openModal42">
+            Написать в WhatsApp
+        </a>
+    </div>
+
+    <div class="modal-42" id="feedbackModal42">
+        <div class="modal-content-42">
+            <div class="modal-header-42">
+                <h2 class="modal-title-42">
+                    <span>📝</span> Форма обратной связи
+                </h2>
+                <button class="close-btn-42" id="closeModal42">&times;</button>
+            </div>
+            <form id="feedbackForm42">
+                <div class="form-group-42">
+                    <label for="name42" class="label-42">Ваше имя:</label>
+                    <input type="text" id="name42" class="input-42" required placeholder="Введите ваше имя">
+                </div>
+                <div class="form-group-42">
+                    <label for="phone42" class="label-42">Телефон:</label>
+                    <input type="tel" id="phone42" class="input-42" required placeholder="Введите ваш телефон">
+                </div>
+                <div class="form-group-42">
+                    <label for="email42" class="label-42">Email:</label>
+                    <input type="email" id="email42" class="input-42" placeholder="Введите ваш email (необязательно)">
+                </div>
+                <div class="form-group-42">
+                    <label for="message42" class="label-42">Сообщение:</label>
+                    <textarea id="message42" class="textarea-42" required placeholder="Введите ваше сообщение"></textarea>
+                </div>
+                <button type="submit" class="submit-btn-42">
+                    <span class="whatsapp-icon-42">💬</span> Отправить в WhatsApp
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="notification-42" id="notification42">
+        Сообщение подготовлено! Открываю WhatsApp...
+    </div>
+
+      </div>
+    </section>
+    <section id="part4" class="sw">
+      <div style="flex-direction: column;" class="container flexbox-center">
+
+        <img class="OTZ" style="max-width: 1000px;
+    width: 100%; margin-bottom: 50px;" src="./OTZ.svg" alt="">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./img/37b4fb85-31aa-4709-bc1a-f7bbb29e6800.jpeg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/47c746f0-9104-45f5-b8ec-644839a55f2c.jpeg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/5c5e0253-1c0e-4dde-bf17-ceff6c1d64f7.jpeg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/63638ca7-8e41-4dd8-a0ee-2cc14d762922.jpeg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/b0c140ce-6c7c-4804-a717-7dff3931c082.jpeg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/cf30912d-56f1-4aca-91ef-fbec1fde44ac.jpeg" alt="">
+            </div>
+          </div>
+          <!-- If we need pagination -->
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./script.js"></script>
+  <script src="./form.js"></script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/102451524" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+</body>
+
+</html>
